@@ -1,0 +1,26 @@
+﻿<Window x:Class="ST10024680_Ernesto_VanWyk_PROG_POE.DisplayRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10024680_Ernesto_VanWyk_PROG_POE"
+        mc:Ignorable="d"
+        Title="DisplayRecipe" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbl" Content="Enter name of recipe you what to display: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,30,0,0" ></Label>
+        <TextBox x:Name="txtsearch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="41,78,0,0" Height="33" ></TextBox>
+        <Button x:Name="btnSearch" Content="SEARCH" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,77,0,0" Height="33" Click="btnSearch_Click"></Button>
+        <ListBox x:Name="lbxDisplayRecipe" HorizontalAlignment="Left" VerticalAlignment="Top" Width="336" Margin="322,43,0,0" Height="359" />
+        <Label x:Name="lbl1" Content="Scale recipe Quantities by: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="174" Margin="41,147,0,0" ></Label>
+        <Button x:Name="btnHalf" Content="Half (0.5)" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="41,188,0,0" Height="34" Width="69" Click="btnHalf_Click"></Button>
+        <Button x:Name="btnDouble" Content="Double (2)" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="117,188,0,0" Height="34" Width="69" Click="btnDouble_Click"/>
+        <Button x:Name="btnTriple" Content="Triple (3)" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="191,188,0,0" Height="34" Width="69" Click="btnTriple_Click"/>
+        <Label x:Name="lblReset" Content="Reset Quantities to original values: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="246" Margin="28,258,0,0" />
+        <Button x:Name="btnResetQ" Content="Reset Quantities" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80,289,0,0" Height="34" Width="104" Click="btnResetQ_Click"/>
+
+
+        <Button x:Name="btnClose" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,369,0,0" Height="33" Click="btnClose_Click" Width="106"/>
+
+
+    </Grid>
+</Window>

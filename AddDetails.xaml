@@ -1,0 +1,39 @@
+﻿<Window x:Class="ST10024680_Ernesto_VanWyk_PROG_POE.AddDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10024680_Ernesto_VanWyk_PROG_POE"
+        mc:Ignorable="d"
+        Title="AddDetails" Height="450" Width="700">
+    <Grid>
+        <Label x:Name="lblRecipeName" Content="Recipe Name: " HorizontalAlignment="Left" Margin="37,37,0,0" VerticalAlignment="Top" Width="174" ></Label>
+        <ComboBox x:Name="cmbRecipeName" Width="174" Margin="0,37,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" IsEditable="True" IsSynchronizedWithCurrentItem="False" ></ComboBox>
+        <Label x:Name="lblRecipeQuantity" Content="Enter Recipe Quantity: " HorizontalAlignment="Left" Margin="37,74,0,0" VerticalAlignment="Top" Width="174" />
+        <Label x:Name="lblUnitMeasure" Content="Enter Unit Of Measurement: " HorizontalAlignment="Left" Margin="37,151,0,0" VerticalAlignment="Top" Width="174" />
+        <Label x:Name="lblCalo0ries" Content="Enter Number of Calories: " HorizontalAlignment="Left" Margin="37,195,0,0" VerticalAlignment="Top" Width="174" />
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="174" ></TextBox>
+        <TextBox x:Name="txtUnitOMeasure" HorizontalAlignment="Center" Margin="0,155,0,0" VerticalAlignment="Top" Width="174" />
+        <TextBox x:Name="txtCalories" HorizontalAlignment="Center" VerticalAlignment="Top" Width="174" Margin="0,199,0,0" />
+        <Button x:Name="btnSaveD" Content="Save Details" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,375,0,0" Click="btnSaveRecipe_Click" Height="37" Width="87" ></Button>
+        <Label x:Name="lblFoodGroup" Content="Enter Food Group: " HorizontalAlignment="Left" Margin="37,235,0,0" VerticalAlignment="Top" Width="174" />
+        <TextBox x:Name="txtFoodGroup" HorizontalAlignment="Center" VerticalAlignment="Top" Width="174" Margin="0,239,0,0" />
+        <Label x:Name="lblSteps" Content="Enter Steps: " HorizontalAlignment="Left" Margin="37,302,0,0" VerticalAlignment="Top" Width="174" />
+        <TextBox x:Name="txtSteps" HorizontalAlignment="Center" VerticalAlignment="Top" Width="180" Margin="0,302,0,0" RenderTransformOrigin="0.5,0.5" Height="50" >
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.652"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.489"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <ListBox x:Name="displayCal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221" Margin="456,37,0,0" Height="283" />
+        <Button x:Name="btnMenu" Content="View Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,375,0,0" Click="btnMenu_Click" Height="37" Width="87" />
+        <Label x:Name="lblQytname" Content="Enter Ingredient Name: " HorizontalAlignment="Left" Margin="37,116,0,0" VerticalAlignment="Top" Width="174" />
+        <TextBox x:Name="textingrename" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="174" />
+
+
+    </Grid>
+</Window>
